@@ -87,7 +87,6 @@ class NewVisitorTest(LiveServerTestCase):
 		self.assertIn('Buy milk', page_text)
 
 		# Satisfied, they both go back to sleep
-
 		
 		table = self.browser.find_element_by_id('id_list_table')
 		rows = table.find_elements_by_tag_name('tr')
