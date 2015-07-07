@@ -6,6 +6,9 @@ class LayoutAndSytlingTest(FunctionalTest):
 	def test_layout_and_styling(self):
 		# Edith goes to the home page
 		self.browser.get(self.server_url)
+		## The dimensions are different than what is in the book because there
+		## was some odd aspect ratio thing going on that would cause the test
+		## to fail
 		self.browser.set_window_size(1044, 768)
 
 		# She notices the input box is nicely centered
